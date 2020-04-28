@@ -1,0 +1,13 @@
+
+<form [formGroup]="form" >
+<input formControlName="time">Текст завдання
+  <br>
+<input type="radio" value="на протязі 1 місяця" formControlName="tipe" name="tipe">на протязі 1 місяця
+  <br>
+<input type="radio" value="на протязі 3 місяців" formControlName="tipe" name="tipe">на протязі 3 місяців
+  <br>
+<input type="radio" value="на протязі 1 року" formControlName="tipe" name="tipe">на протязі 1 року
+  <br>
+  <button (click)="createTask(form)" [disabled]= "form.invalid"  >OK</button>
+
+</form>
